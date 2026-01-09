@@ -845,6 +845,20 @@
             });
         }
     }
+    function setupLifeIndexCards() {
+        const lifeIndexCards = document.querySelectorAll('.life-index-card');
+
+        lifeIndexCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const indexLabel = this.querySelector('.index-label').textContent;
+                const indexValue = this.querySelector('.index-value').textContent;
+                const indexStatus = this.querySelector('.index-status').textContent;
+
+                // 상세 정보 모달 표시 (간단한 예시)
+                alert(`${indexLabel}\n지수: ${indexValue}\n상태: ${indexStatus}\n\n상세 정보는 추후 구현 예정입니다.`);
+            });
+        });
+    }
 </script>
 </body>
 </html>
