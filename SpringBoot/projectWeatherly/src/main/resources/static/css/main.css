@@ -1400,25 +1400,6 @@ body.dark-mode .header-container {
     background: transparent !important;
 }
 
-/* ===== 다크모드 스타일 개선 ===== */
-
-/* 다크모드 배경 및 텍스트 색상 */
-body.dark-mode {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%) !important;
-    color: #e0e0e0 !important;
-}
-
-/* 다크모드 헤더 */
-body.dark-mode .main-header {
-    background: #1e1e2e !important;
-    border-bottom: 1px solid #2d2d44 !important;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
-}
-
-body.dark-mode .header-container {
-    background: transparent !important;
-}
-
 /* 다크모드 로고 */
 body.dark-mode .logo-text {
     background: linear-gradient(135deg, #4fc3f7, #29b6f6) !important;
