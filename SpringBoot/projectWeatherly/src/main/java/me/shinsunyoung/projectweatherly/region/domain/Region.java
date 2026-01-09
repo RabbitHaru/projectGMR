@@ -10,17 +10,22 @@ import lombok.*;
 @Table(name = "region")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor
 @Builder
 
 public class Region {
     @Id
-    @Column(name = "legal_code", length = 10)
-    private String legalCode;
+    @Column(name = "region_code", length = 10)
+    private String regionCode;
 
-    @Column(name = "legal_name", nullable = false)
-    private String legalName;
+    @Column(name = "region_name", nullable = false)
+    private String regionName;
 
     @Column(name = "is_active", nullable = false)
     private boolean isActive;
+
+    public Region(String regionCode, String regionName, boolean isActive){
+        this.regionCode = regionCode;
+        this.regionName = regionName;
+        this.isActive = isActive;
+    }
 }
